@@ -1,0 +1,152 @@
+/*____________________________________________________*/
+/*_Scrollbar-Custom_*/
+::selection {
+    color: white;
+    background: #73ba25;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #141414; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ee0000, #ffb516, #73ba25, #294172);
+    border-radius: 7px;
+    border: 1px solid white;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#ee0000, #ffb516, #73ba25, #294172);
+    border-radius: 7px;
+    border: 1px solid white;
+  }
+/*____________________________________________________*/
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+* {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	       box-sizing: border-box; 
+}
+
+html {
+	background: #101010;
+	min-height:100%;
+	color: #dae9f4;
+	font-weight:400;
+	font-size:1em;
+	font-family:'Open Sans', sans-serif;
+	line-height:2em;
+}
+body {
+	padding:20px;
+	-webkit-backface-visibility:hidden;
+}
+code {
+	font-family:consolas,monospace;	
+}
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+img {
+	width:20px;
+	height: auto;
+}
+a, img {
+        border:none;
+		outline:none
+}
+
+.size-img{
+	width: 250px;
+	height: 50px
+}
+
+a:hover {
+	color:#73ba25;
+}
+
+div a:hover {
+	color:#73ba25;
+}
+
+.wrapper {
+	margin:0 auto;
+	padding-top:20px;
+	max-width:80%;
+}
+
+.block {
+	font-size:.875em;
+	margin:20px 0;
+	padding:20px;
+	color: #dae9f4
+}
+
+table {
+	width:100%;
+	border-collapse:collapse;
+	font-size:.875em;
+	background-color: #141414;
+	border: 1px solid white;
+}
+tr {
+	outline:0;
+	border:0;
+}
+tr:hover td {
+	background:#73ba25;
+}
+th {
+	text-align:left;
+	font-size:.75em;
+	padding-right:20px;
+}
+/* 2nd Column: Filename */
+th + th {
+	width:65%;
+}
+/* 3rd Column: Last Modified */
+th + th + th {
+}
+/* 4th Column: Size */
+th + th + th + th {
+	width:5%;
+}
+tr td:first-of-type {
+	padding-left:10px;
+	padding-right:10px;
+}
+td {
+	padding:5px 0;
+	outline:0;
+	border:0;
+	border-bottom:0px none #fff;
+	vertical-align:middle;
+	text-align:left;
+	-webkit-transition:background 300ms ease;
+	   -moz-transition:background 300ms ease;
+	    -ms-transition:background 300ms ease;
+	     -o-transition:background 300ms ease;
+	        transition:background 300ms ease;
+}
+td a{
+	display: block;
+	color:#ffffff;
+}
+
+td a:hover{
+	color:#ffffff;
+}
+
+tr.parent a[href^="/"] {
+	color:#ffffff;
+}
+	.parent a[href^="/"]:hover {
+		color:#ffffff;
+	}

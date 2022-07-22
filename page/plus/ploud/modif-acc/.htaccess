@@ -1,0 +1,13 @@
+
+# HTID:17611734: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+AuthType Basic
+AuthName "Connectez-vous pour"
+AuthUserFile "/storage/ssd5/127/16853127/public_html/ftp/perso/partage/.htpasswd"
+Require user unptitflo
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17611734:
+# HTID:17626203: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile "/storage/ssd5/127/16853127/public_html/ftp/perso/partage/.htpasswd"
+Require user warl
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17626203:

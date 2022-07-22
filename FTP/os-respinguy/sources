@@ -1,0 +1,20 @@
+# Sources OS ResPinGuy
+#_________________________________________________________________________
+# Officiel
+#__________
+#
+# (Base)
+BASE=$(curl http://respinguy.tk/ftp/os-respinguy/)
+#
+# (Package)
+PACKAGE=$(curl http://warl.r.free.fr/)
+#
+# (ISO)
+#ISO=$(curl https://storage.ploud.fr/index.php/s/MBXCeC9ZD9osnci?path=%2FISO-ResPinGuy/)
+#
+#_________________________________________________________________________
+# Non-Officiel
+#__________
+#
+# (Depôt Communautaire)
+#DEP-COM=$(sh /etc/rpg-pkg/dep-com/)
