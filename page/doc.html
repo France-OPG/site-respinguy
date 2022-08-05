@@ -1,0 +1,128 @@
+<!doctype html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<!--[Head - Titre, ico,]------------------------------------------------------------------------------------->
+
+    <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <title>ResPinGuy - Documentation</title>
+         <link rel="stylesheet" href="../style.css">
+         <link rel="shortcut icon" type="image/png" href="../logo-img-theme/logo/ResPinGuy-BF.png">
+         <style> 
+         </style>
+    </head>
+
+<!--[Body - Menu]------------------------------------------------------------------------------------->
+
+    <body>
+	     <center>
+	     	<nav>
+	     		<ul>
+                    <li id="li-deb" ><a href="../index.html">ResPinGuy</a></li>
+					<li id="li-mid" ><a href="./telechargement.html">Téléchargement</a></li>
+                    <li id="li-mid" ><a href="./doc.html">Documentation</a></li> 
+					<li id="li-fin" ><a href="+.html">+</a></li>
+	     		</ul>
+	     	</nav>
+		 </center>
+		 
+<!--[Body - Contenue]------------------------------------------------------------------------------------->
+
+            <center>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1>ResPinGuy n'est pas encore disponible ! :)</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1>______________________________________________________________</h1>
+                <!--  
+                <h1>Documentation et Info</h1>
+                <h3>ResPinGuy, l'outil pour faire une image ISO de son système Linux.</h3>
+				<h4>
+					Cette outil fonctionne avec : Ubuntu, Debian, Fedora, openSUSE.
+				    <br>
+				     D'autre base seront peut-être bientôt disponible !
+				</h4>
+                <h1>______________________________________________________________</h1><br>
+                <h6><a href="#doc">Documentation</a></h>
+                <h6><a href="#config">Configuration pour l'utilisation</a></h>
+                <h6><a href="#note">Note des developeurs</a></h>
+                <h1>______________________________________________________________</h1><br>
+                <a name="doc"></a><h1>Documentation :</h1>
+                <h1>_______________________________</h1>
+                <h2>Installation :</h2>
+                <h3>Cette étape/commande n'est pas nécessaire si vous avez déjà ResPinGuy (Téléchargement)</h3>
+                <pre class="userinput"><kbd class="command">wget respinguy.tk/ftp/file-respinguy/Install-ResPinGuy && sudo bash Install-ResPinGuy</kbd></pre>
+                <h1>_______________________________</h1>
+                <h2>Liste des commandes :</h2>
+                <h1>_________________</h1><br>
+                <h4>Permet la création de l'image ISO :</h4>
+                <pre class="userinput"><kbd class="command">sudo respinguy</kbd></pre><br>
+                <h1>_________________</h1><br>
+                <h4>Permet de modifier des options avent la création d'image ISO :</h4>
+                <pre class="userinput"><kbd class="command">respinguy-conf</kbd></pre><br>
+                <h1>_________________</h1><br>
+                <h4>Permet la mise a jour de l'outil :</h4>
+                <pre class="userinput"><kbd class="command">sudo respinguy-up</kbd></pre><br>
+                <h1>_________________</h1><br>
+                <h4>Permet la suppression de l'outil :</h4>
+                <pre class="userinput"><kbd class="command">sudo respinguy-app-rm</kbd></pre><br>
+                <h5>Commande de secours :</h5>
+                <pre class="userinput"><kbd class="command">wget respinguy.tk/ftp/file-respinguy/Remove-ResPinGuy && sudo bash Remove-ResPinGuy</kbd></pre><br>
+                <h1>_________________</h1><br>
+                <h4>Permet verifier les dépendances :</h4>
+                <pre class="userinput"><kbd class="command">sudo respinguy-app-dep</kbd></pre><br>
+                <h5>Commande de secours :</h5>
+                <pre class="userinput"><kbd class="command">wget respinguy.tk/ftp/file-respinguy/Ver-Dep-ResPinGuy && bash Ver-Dep-ResPinGuy</kbd></pre><br>
+                
+                <h1>_________________</h1><br>
+                <h4># :</h4>
+                <pre class="userinput"><kbd class="command">sudo respinguy-app-#</kbd></pre><br>
+                <h5>Commande de secours :</h5>
+                <pre class="userinput"><kbd class="command">wget respinguy.tk/ftp/file-respinguy/# && sudo bash #</kbd></pre><br>
+                
+                <h1>_______________________________</h1>
+                <h2>Tutoriel Video :</h2>
+                <h3>NON DISPONIBLE</h3>
+                <h1>_______________________________</h1>
+                <h2>initrd :</h2>
+                <a name="initrd"></a>
+                <h3>DSINRD (création de initrd) en fonction de la distribution :</h3>
+                <h4>(retrouver uniquement les distributions supporter officiellement<br>
+                    vous pouvez utiliser d'autre adresse internet)<br>
+                    <a href="http://respinguy.tk/ftp/file-respinguy/initrd/communautaire/">http://respinguy.tk/ftp/file-respinguy/initrd/communautaire/</a>
+                </h4>
+                    <h1>_ _ _</h1><br>
+                    <h5>DSINRD pour Debian :</h5>
+                    <pre class="userinput"><kbd class="command">http://respinguy.tk/ftp/file-respinguy/initrd/officiel/Debian/make-initrd.zip</kbd></pre>
+                    <br><h4>_ _ _</h4><br>
+                    <h5>DSINRD pour Ubuntu :</h5>
+                    <pre class="userinput"><kbd class="command">http://respinguy.tk/ftp/file-respinguy/initrd/officiel/Ubuntu/make-initrd.zip</kbd></pre>
+                    <p>
+                        Le noyaux de Ubuntu qui est installer par defaut n'est pas compatible avec ResPinGuy.<br>
+                        Vous pouvez envisager d'installer un autre noyaux ou de le recompiler.<br>
+                        Nous vous recommandons le noyaux Liquorix (<a href="https://liquorix.net">https://liquorix.net</a>)
+                    </p>
+                    <br><h4>_ _ _</h4><br>
+                    <h5>DSINRD pour Mint :</h5>
+                    <pre class="userinput"><kbd class="command">http://respinguy.tk/ftp/file-respinguy/initrd/officiel/Mint/make-initrd.zip</kbd></pre>
+                    <br><h4>_ _ _</h4><br>
+                    <h5>DSINRD pour openSUSE :</h5>
+                    <pre class="userinput"><kbd class="command">http://respinguy.tk/ftp/file-respinguy/initrd/officiel/openSUSE/make-initrd.zip</kbd></pre>
+                    <br><h4>_ _ _</h4><br>
+                    <h5>DSINRD pour # :</h5>
+                    <pre class="userinput"><kbd class="command">http://respinguy.tk/ftp/file-respinguy/initrd/officiel/#/make-initrd.zip</kbd></pre>
+                    
+                <h1>______________________________________________________________</h1><br>
+                <a name="config"></a><h1>Configuration pour l'utilisation de ResPinGuy :</h1>
+                <h4>
+                    Minimum Ram : 4 Go | Recomander Ram: 8 Go <br>
+                    Minimun CPU : 4 Core 2.50 GHz | Recomander CPU : 8 Core 3.50 GHz <br>
+                    Minimum Storage : 50 Go Libre HDD | Recomander Storage : 100 Go Libre SSD <br>
+                </h4>
+                <h1>______________________________________________________________</h1><br>
+                <a name="note"></a><h1>Note des developeurs :</h1>
+                <h2>Les developeur de ResPinGuy n'ont rien a ajouter :)</h2>
+                <h1>______________________________________________________________</h1><br>
+            -->
+            </center>
+    </body>
+</html>
