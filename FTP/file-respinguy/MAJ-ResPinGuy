@@ -9,18 +9,13 @@ allow_only_root()
   fi
 }
 allow_only_root
-#######################################################################
 clear
-if [ ! $(type -p unzip) ]; then
-	clear
-   echo "Impossible de trouver la commande : unzip"
-   echo "Vous pouvez envisager d'installer le package contenant la commande."
-	exit 1
-fi
-read -p "Appuyez sur une touche pour lancer l'installation ..."
+#######################################################################
+# Vérification les dependences
+wget respinguy.tk/FTP/file-respinguy/Ver-Dep-ResPinGuy && bash Ver-Dep-ResPinGuy
 #######################################################################
 # Téléchargement, deplacement, extraction, ...
-wget http://respinguy.tk/ftp/file-respinguy/file-respinguy.zip
+wget http://respinguy.tk/FTP/file-respinguy/file-respinguy.zip
 clear
 read -p "Continuer ..."
 mv file-respinguy.zip /tmp/

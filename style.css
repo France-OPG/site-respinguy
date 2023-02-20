@@ -11,7 +11,7 @@ a{
     color: white;
     text-decoration: none;
     font-family: Arial;
-    font-size: 20;
+    font-size: 18px;
 }
 
 body {
@@ -104,7 +104,7 @@ h6 a{
     color: white;
     text-decoration: none;
     font-family: Arial;
-    font-size: 20;
+    font-size: 15px;
     position: center;
 	margin: 0px auto;
     border: 1px solid white;
@@ -117,9 +117,8 @@ h6 a{
     display: block; /*Toute la surface sera cliquable*/
     text-decoration: none;
     color: white;
-    border-bottom: 0px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
     border-style: 5px white;
-    padding: 15px 0px;/*Agrandit le menu et espace la bordure du texte*/
+    padding: 13px 0px;/*Agrandit le menu et espace la bordure du texte*/
 }
 
 h6 a:hover {

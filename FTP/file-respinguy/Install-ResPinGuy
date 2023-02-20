@@ -12,10 +12,10 @@ allow_only_root
 clear
 #######################################################################
 # Vérification les dependences
-wget respinguy.tk/ftp/file-respinguy/Ver-Dep-ResPinGuy && bash Ver-Dep-ResPinGuy
+wget respinguy.tk/FTP/file-respinguy/Ver-Dep-ResPinGuy && bash Ver-Dep-ResPinGuy
 #######################################################################
 # Téléchargement, deplacement, extraction, ...
-wget http://respinguy.tk/ftp/file-respinguy/file-respinguy.zip
+wget http://respinguy.tk/FTP/file-respinguy/file-respinguy.zip
 clear
 read -p "Continuer ..."
 mv file-respinguy.zip /tmp/
