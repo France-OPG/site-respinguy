@@ -1,0 +1,76 @@
+#!/bin/bash
+#######################################################################
+clear
+rm rpg-ins
+# Root
+allow_only_root()
+{
+  if [ "0$UID" -ne 0 ]; then
+     echo "Merci d'être en root pour lancer L'installation"; exit 1
+  fi
+}
+allow_only_root
+#######################################################################
+echo "Verification, des dependances pour l'installation..."
+# Vérification de git
+if [ ! $(type -p git) ]; then
+    echo "Impossible de trouver la commande : git"
+    echo "Vous pouvez envisager d'installer le package contenant la commande."
+    echo "Une fois le package installer vous pouvez relancer l'installation."
+    echo "Lien d'aide : https://git-scm.com/download/linux "
+    exit 1
+fi
+echo "[1/4] | git est bien installer"
+#_________________________________________________
+# Vérification de wget
+if [ ! $(type -p wget) ]; then
+    echo "Impossible de trouver la commande : wget"
+    echo "Vous pouvez envisager d'installer le package contenant la commande."
+    echo "Une fois le package installer vous pouvez relancer l'installation."
+    echo "Lien d'aide : https://www.gnu.org/software/wget/ "
+    exit 1
+fi
+echo "[2/4] | wget est bien installer"
+#_________________________________________________
+# Vérification de sudo
+if [ ! $(type -p sudo) ]; then
+    echo "Impossible de trouver la commande : sudo"
+    echo "Vous pouvez envisager d'installer le package contenant la commande."
+    echo "Une fois le package installer vous pouvez relancer l'installation."
+    echo "Lien d'aide : https://www.sudo.ws "
+    exit 1
+fi
+echo "[3/4] | sudo est bien installer"
+#_________________________________________________
+# Vérification de bash
+if [ ! $(type -p bash) ]; then
+    echo "Impossible de trouver la commande : bash"
+    echo "Vous pouvez envisager d'installer le package contenant la commande."
+    echo "Une fois le package installer vous pouvez relancer l'installation."
+    echo "Lien d'aide : https://www.gnu.org/software/bash/ "
+    exit 1
+fi
+echo "[4/4] | bash est bien installer"
+#_________________________________________________
+#######################################################################
+cd /tmp/
+git clone https://github.com/France-OPG/ResPinGuy.git
+cd ResPinGuy
+bash ./install
+cd /tmp/
+rm ResPinGuy
+cd ~
+clear
+#######################################################################
+#Exemple :
+#
+# Vérification de ...
+#if [ ! $(type -p ...) ]; then
+#    echo "Impossible de trouver la commande : ..."
+#    echo "Vous pouvez envisager d'installer le package contenant la commande."
+#    echo "Une fois le package installer vous pouvez relancer l'installation."
+#    echo "Lien d'aide : ... "
+#    exit 1
+#fi
+#echo "[#/#] | ... est bien installer"
+#_________________________________________________
